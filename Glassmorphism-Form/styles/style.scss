@@ -5,7 +5,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #F2E7FF;
 }
 
@@ -30,12 +31,10 @@ body{
             top: -80px;
         }
 
-        &:last-child{
-            background: linear-gradient(
-                to right,
-                #f492f0,
-                #a18dce
-            );
+        &:last-child {
+            background: linear-gradient(to right,
+                    #f492f0,
+                    #a18dce);
             right: -30px;
             bottom: -80px;
         }
@@ -46,15 +45,15 @@ body{
 form {
     height: 520px;
     width: 400px;
-    background-color: rgba(255,255,255,0.13);
+    background-color: rgba(255, 255, 255, 0.13);
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     border-radius: 10px;
     backdrop-filter: blur(10px);
-    border: 2px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 40px rgba(103,56,131,0.6);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(103, 56, 131, 0.6);
     padding: 50px 35px;
 
     * {
@@ -72,25 +71,27 @@ form {
         text-align: center;
     }
 
-    label{
+    label {
         display: block;
         margin-top: 30px;
         text-align: center;
         font-size: 16px;
         font-weight: 500;
     }
-    input{
+
+    input {
         display: block;
         height: 50px;
         width: 100%;
-        background-color: rgba(255,255,255,0.09);
+        background-color: rgba(255, 255, 255, 0.09);
         border-radius: 3px;
         padding: 0 10px;
         margin-top: 8px;
         font-size: 14px;
         font-weight: 300;
     }
-    ::placeholder{
+
+    ::placeholder {
         color: #431259;
     }
 
@@ -112,26 +113,30 @@ form {
     display: flex;
     cursor: pointer;
 
-    .icon{
+    .icon {
         width: 150px;
         border-radius: 3px;
         padding: 8px 10px 10px 5px;
-        background-color: rgba(139,93,172,0.27);
+        background-color: rgba(139, 93, 172, 0.27);
         color: #431259;
         text-align: center;
-        &:hover {
-            background-color: rgba(139,93,172,0.47);
-        }
-        a{
-            text-decoration: none;
-        }
-      }
 
-      .fb{
-        margin-left: 25px;
-      }
-      i{
-        margin-right: 4px;
-      }
+        &:hover {
+            background-color: rgba(139, 93, 172, 0.47);
+        }
+
+        a {
+            text-decoration: none;
+
+
+            i {
+                margin-right: 4px;
+            }
+        }
+
+        &.fb {
+            margin-left: 25px;
+        }
+    }
 
 }

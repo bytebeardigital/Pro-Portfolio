@@ -148,11 +148,11 @@ form button {
   text-decoration: none;
 }
 
-.socialbar .fb {
-  margin-left: 25px;
+.socialbar .icon a i {
+  margin-right: 4px;
 }
 
-.socialbar i {
-  margin-right: 4px;
+.socialbar .icon.fb {
+  margin-left: 25px;
 }
 /*# sourceMappingURL=style.css.map */
