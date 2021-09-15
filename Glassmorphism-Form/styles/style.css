@@ -131,7 +131,7 @@ form button {
   cursor: pointer;
 }
 
-.socialbar div {
+.socialbar .icon {
   width: 150px;
   border-radius: 3px;
   padding: 8px 10px 10px 5px;
@@ -140,11 +140,11 @@ form button {
   text-align: center;
 }
 
-.socialbar div:hover {
+.socialbar .icon:hover {
   background-color: rgba(139, 93, 172, 0.47);
 }
 
-.socialbar div a {
+.socialbar .icon a {
   text-decoration: none;
 }
 
