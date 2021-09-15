@@ -144,6 +144,10 @@ form button {
   background-color: rgba(139, 93, 172, 0.47);
 }
 
+.socialbar div a {
+  text-decoration: none;
+}
+
 .socialbar .fb {
   margin-left: 25px;
 }
