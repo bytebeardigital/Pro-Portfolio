@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #080710;
+  background-color: #F2E7FF;
 }
 
 .background {
@@ -19,5 +19,136 @@ body {
           transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
+}
+
+.background .circle-shape {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.background .circle-shape:first-child {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9bafd9), to(#103783));
+  background: linear-gradient(#9bafd9, #103783);
+  left: -80px;
+  top: -80px;
+}
+
+.background .circle-shape:last-child {
+  background: -webkit-gradient(linear, left top, right top, from(#f492f0), to(#a18dce));
+  background: linear-gradient(to right, #f492f0, #a18dce);
+  right: -30px;
+  bottom: -80px;
+}
+
+form {
+  height: 520px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 0 40px rgba(103, 56, 131, 0.6);
+          box-shadow: 0 0 40px rgba(103, 56, 131, 0.6);
+  padding: 50px 35px;
+}
+
+form * {
+  font-family: 'Poppins', sans-serif;
+  color: #431259;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+
+form h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+form input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.09);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+form ::-webkit-input-placeholder {
+  color: #431259;
+}
+
+form :-ms-input-placeholder {
+  color: #431259;
+}
+
+form ::-ms-input-placeholder {
+  color: #431259;
+}
+
+form ::placeholder {
+  color: #431259;
+}
+
+form button {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #431259;
+  color: #ffffff;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.socialbar {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.socialbar div {
+  width: 150px;
+  border-radius: 3px;
+  padding: 8px 10px 10px 5px;
+  background-color: rgba(139, 93, 172, 0.27);
+  color: #431259;
+  text-align: center;
+}
+
+.socialbar div:hover {
+  background-color: rgba(139, 93, 172, 0.47);
+}
+
+.socialbar .fb {
+  margin-left: 25px;
+}
+
+.socialbar i {
+  margin-right: 4px;
 }
 /*# sourceMappingURL=style.css.map */
