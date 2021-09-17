@@ -9,6 +9,9 @@ body{
     width: 100%;
     overflow: hidden;
     height: 100vh;
+    @media only screen and (max-width: 980px) {
+        overflow: visible;
+      }
 }
 
 .outer-wrapper{
@@ -24,9 +27,61 @@ body{
 
     .image-side{
         background-color: $rose;
+        background-image: url('../images/rose.jpg');
+        background-size: cover;
         border-radius: 25px;
         padding: 20px 25px 50px 25px;
+        width: 50%;
         height: 100%;
+        @media only screen and (max-width: 980px) {
+            border: 1px solid red;
+            width: 100% !important;
+            order: 6;
+            height: 400px;
+          }
+       .top-nav,
+       .bottom-nav {
+           position: absolute;
+           display: flex;
+        //    width: 780px;
+           margin: 0 auto;
+
+           .logo-link {
+               font-family: $heading;
+               font-weight: 300;
+               font-size: 1.6em;
+           }
+       }
+       .bottom-nav {
+           bottom: 20px;
+           width: 95%;
+           @media only screen and (max-width: 980px) {
+            border: 1px solid red;
+          }
+           .footer-nav {
+               width: 95%;
+               align-items: center;
+               display: flex;
+               width: inherit;
+               a {
+                   color: $white;
+
+                   &.logo-link{
+                       letter-spacing: 1px;
+                   }
+                   font-weight: 300;
+               }
+           }
+       }
+       .top-nav {
+           vertical-align: center;
+            .brand-nav {
+                align-items: center;
+                a {
+                    color: $black;
+                   }
+            }
+       }
     }
 
     .content-side {
@@ -35,21 +90,30 @@ body{
 }
 
 .main-nav {
-    .shop-btn {
-        background-color: $pink;
-        color: $white;
-    }
-    .nav {
+    align-items: center;
         .nav-link {
             color: $black;
             font-size: .95em;
-            margin-right: 25px;
+            margin-right: 20px;
+            @media only screen and (min-width: 950px) and (max-width: 1500px) {
+                margin-right: 6px;
+                padding: 5px 8px 5px 8px;
+                font-sizr: .85em;
+              }
         }
-    }
 }
 
 .btn {
     border-radius: 50px;
+    &.shop-btn{
+        padding: 8px 24px 8px 24px;
+        margin-left: 8%;
+        background-color: $pink;
+        color: $white;
+        @media only screen and (min-width: 950px) and (max-width: 1500px) {
+            margin-left: 1.5%;
+          }
+    }
     &.shop-btn--black {
         background-color: $black;
         color: $white;
@@ -60,28 +124,46 @@ body{
             color: $black;
         }
     }
+    &.buy-btn {
+        background-color: $white;
+        color: $black !important;
+        font-size: .95em;
+        padding: 5px 18px;
+    }
 }
 
 .main-content {
     width: 70%;
-    margin: 20% auto;
+    margin: 16% auto;
+    @media only screen and (min-width: 990px) and (max-width: 1600px) {
+        margin: 25% auto;
+      }
+      @media (min-width: 980px) and (max-width: 1390px) {
+        margin: 19% auto;
+      }
     h1 {
-        font-size: 6rem;
+        font-size: 5.5rem;
         font-family: $heading;
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
         line-height: 1em;
         font-weight: $thin;
+        @media (min-width: 980px) and (max-width: 1390px) {
+            width: 100% !important;
+            font-size: 4rem !important;
+          }
+        @media only screen and (max-width: 980px) {
+            width: 100% !important;
+            font-size: 5rem;
+          }
+          @media only screen and (min-width: 1395px) {
+            width: 100% !important;
+            font-size: 5rem;
+          }
     }
     .subtext{
         margin-top: 40px;
         width: 70%;
         margin: 35px auto 50px;
     }
-}
-
-.bottom-logo {
-    border: 1px solid red;
-    width: 100%;
-
 }
