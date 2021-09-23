@@ -1,12 +1,20 @@
 import React from "react";
 
-const WorkCard = (props) => {
-    return  <div className="workCard">
-    <p className="dateRange">{props.dateStart} - {props.dateEnd}</p>
-    <h3 className="position-title">{props.position}</h3>
-    <p className="position-company">{props.company} | <span className="position-location">{props.location}</span></p>
-    <p className="position-summary">{props.summary}</p>
-</div>;
+class WorkCard extends React.Component {
+    render(){
+        return(
+            <div className="workCard">
+            {this.props.positions.map(position => (
+                <div>
+                    <p className="dateRange">{position.startDate} - {position.endDate}</p>
+                    <h4 className="position-title">{position.position}</h4>
+                    <p className="position-company">{position.company} - {position.location}</p>
+                    <p className="position-summary">{position.desc}</p>
+                </div>
+            ))}
+        </div>
+        )
+    }
 }
 
 export default WorkCard;
