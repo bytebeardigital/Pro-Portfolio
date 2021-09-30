@@ -3,12 +3,13 @@ import React from "react";
 class Wish extends React.Component {
     render() {
         return(
-            <li>
+            <li className="singleWish">
                 <input type="checkbox"
-                checked={this.props.wish.completed}
-                onChange={() => this.props.handleChange(this.props.wish.id)}
+                checked={this.props.wish.granted}
+                onChange={() => this.props.handleChangeProps(this.props.wish.id)}
                  />
-                {this.props.wish.wish}
+                 <button onClick={() => this.props.deleteWishProps(this.props.wish.id)}>Delete</button>
+                <p>{this.props.wish.wish} - ${this.props.wish.cost}</p>
             </li>
         )
     }

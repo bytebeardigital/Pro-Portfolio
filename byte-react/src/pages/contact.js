@@ -4,22 +4,28 @@ import ContactForm from '../components/ContactForm';
 import QuickContact from '../components/QuickContact';
 import MapComponent from '../components/MapComponent';
 
-const Contact = () => {
-    return (
-        <Container className="contactPage">
-            <Row className="justify-content-between">
-                <Col lg={5}>
-                   <ContactForm/>
-                   <QuickContact/>
-                </Col>
-                <Col lg={6}>
-                    <MapComponent/>
-                </Col>
-            </Row>
-        </Container>
-    );
-};
-
-Contact.propTypes = {};
+class Contact extends React.Component {
+    state = {
+        submitButton: ""
+    }
+    formAgree = () => {
+        console.log('submit')
+    }
+    render() {
+        return (
+            <Container className="contactPage">
+                <Row className="justify-content-between">
+                    <Col lg={5}>
+                       <ContactForm formAgreeProps={this.formAgree}/>
+                       <QuickContact/>
+                    </Col>
+                    <Col lg={6}>
+                        <MapComponent/>
+                    </Col>
+                </Row>
+            </Container>
+        );
+    }
+}
 
 export default Contact;

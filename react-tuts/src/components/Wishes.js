@@ -7,7 +7,13 @@ class Wishes extends React.Component {
            <ul>
                {this.props.wishes.map(wish => (
                    
-                   <Wish key={wish.id} wish={wish} handelChange={wish.handleChange} />
+                   <Wish 
+                    key={wish.id}
+                    wish={wish}
+                    cost={wish.cost}
+                    handleChangeProps={this.props.handleChangeProps}
+                    deleteWishProps={this.props.deleteWishProps}
+                    />
                ))}
            </ul>
         )

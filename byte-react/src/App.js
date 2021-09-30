@@ -5,8 +5,6 @@ import About from "./pages/about";
 import Contact from './pages/contact';
 import Resume from './pages/resume';
 import Portfolio from './pages/portfolio';
-import Error from './components/Error';
-import Rick from './pages/rick';
 
 function App() {
   return (
@@ -17,9 +15,6 @@ function App() {
                             <Route path="/resume" component={Resume}/>
                             <Route path="/portfolio" component={Portfolio}/>
                             <Route path="/contact" component={Contact}/>
-
-                            <Route path="/fetch" component={Rick}/>
-                            <Route component={Error} />
                         </Switch>
     </div>
   );
