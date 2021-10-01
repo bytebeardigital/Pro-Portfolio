@@ -10,7 +10,7 @@ class InputWish extends Component {
         })
     }
 
-    handleSubmit = e => {≤u
+    handleSubmit = e => {
         e.preventDefault();
         if(this.state.wish.trim()){
             this.setState({
@@ -20,7 +20,7 @@ class InputWish extends Component {
         } else {
             alert("Don't you want to be all powerful?!?")
         }
-        console.log(mmnn)
+        console.log("testing")
     }
     render(){
         return (

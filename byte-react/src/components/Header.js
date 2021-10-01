@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row } from 'react-bootstrap';
+import mapImg from '../assets/images/headshot.jpeg';
 
 class Header extends Component {
     constructor(props) {
@@ -13,7 +14,7 @@ class Header extends Component {
             <Container className="header">
                 <Row className="text-center">
                    <div className="branding">
-                   <p className="logo"></p>
+                   <img src={mapImg} className="logo img-fluid" alt="headshot"/>
                    <div className="branding-content">
                        <p className="author">ByteBear Bree</p>
                        <p className="author-role">UI Designer + Developer</p>

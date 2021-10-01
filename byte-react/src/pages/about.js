@@ -3,6 +3,7 @@ import { CustomPlaceholder } from 'react-placeholder-image';
 import {Container, Row, Col, Card} from 'react-bootstrap';
 // import PropTypes from 'prop-types';
 import HeadingBlock from '../components/HeadingBlock';
+import Instagram from '../components/Instagram';
 
 const About = () => {
     return (
@@ -16,13 +17,8 @@ const About = () => {
                    </div>
                </Col>
                <Col lg={4}>
-               <HeadingBlock headingTitle="????"/>
-                    <CustomPlaceholder 
-                        width={400}
-                        height={300}
-                        backgroundColor="#223851"
-                        textColor="#ffffff"
-                        text="Test Img"/>
+               <HeadingBlock headingTitle="Insta Feed"/>
+                        <Instagram/>
                </Col>
            </Row>
            <Row className="projects">
