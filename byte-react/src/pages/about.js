@@ -5,6 +5,8 @@ import {Container, Row, Col, Card} from 'react-bootstrap';
 import HeadingBlock from '../components/HeadingBlock';
 import Instagram from '../components/Instagram';
 
+const API_KEY = process.env.REACT_APP_IG_TOKEN
+
 const About = () => {
     return (
         <Container>
@@ -17,8 +19,8 @@ const About = () => {
                    </div>
                </Col>
                <Col lg={4}>
-               <HeadingBlock headingTitle="Insta Feed"/>
-                        <Instagram/>
+               <HeadingBlock headingTitle="Instagram Feed"/>
+                        <Instagram token={API_KEY} limit={1}/>
                </Col>
            </Row>
            <Row className="projects">
@@ -27,7 +29,7 @@ const About = () => {
                        <Card className="card projectCard">
                            <CustomPlaceholder width={100} height={50}/>
                            <Card.Body className="card-body meta">
-                               <h5>Project TItle</h5>
+                               <h5>Project Title</h5>
                                <p className="project-type">Project Type</p>
                            </Card.Body>
                        </Card>

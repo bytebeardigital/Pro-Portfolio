@@ -222,3 +222,26 @@ section {
     margin: 50px auto 75px auto;
 
 }
+
+//INSTAGRAM FEED
+.ig-container {
+    width: 95%;
+    .single-ig{
+        text-decoration: none;
+    }
+    .ig-meta-container {
+        background-color: $tan;
+        padding: 20px 0 15px 0;
+        p, h4 {
+            text-decoration: none;
+            color: $navy;
+        }
+        p{
+            line-height: .5rem;
+        }
+        h4 {
+            line-height: 1rem;
+        }
+
+    }
+}
