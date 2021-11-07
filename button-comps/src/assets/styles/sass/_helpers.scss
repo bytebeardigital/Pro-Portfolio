@@ -1,0 +1,77 @@
+//MIXINS
+
+// x-small (<576px)
+@mixin for-xsmall {
+    @media (max-width: 576px){ @content; }
+  }
+
+
+//small devices
+@mixin for-phone-only {
+    @media (max-width: 576px) and (min-width: 350px) { @content;    
+    border: 1p }
+  }
+
+  //Media (>= 768px)
+  @mixin for-tablet-portrait-up {
+    @media (min-width: 768px) and (max-width: 720px) { @content; }
+  }
+  // Large (desktops, >=992px)
+  @mixin for-desktops {
+    @media (min-width: 992px) and (max-width: 960px){ @content; }
+  }
+  // X-Large (lg desktops, >= 1200px)
+  @mixin for-big-desktop-up {
+    @media (min-width: 1200px) and (max-width: 1140px) { @content; }
+  }
+  //XX-Large (large desktops, >= 1400px)
+  @mixin for-xxl {
+      @media (min-width: 1400px ) and (max-width: 1320px){@content}
+  }
+
+
+//HELPERS
+// Style p element.
+
+$paragraph-margin-bottom:   1rem !default;
+
+// Grid breakpoints
+//
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+
+
+// Grid containers
+//Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+) !default;
+
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                12 !default;
+$grid-gutter-width:           1.5rem !default;
+$grid-row-columns:            6 !default;
+
+
+// Container padding
+
+$container-padding-x: $grid-gutter-width * .5 !default;
