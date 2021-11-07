@@ -1,0 +1,52 @@
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+    display: grid; //creates grid container
+    grid-template-columns: repeat(12, 1fr); //defines columns for grid 12-equal-sized columns. 1fr is width of individual column fr(fractions of available space in grid container)
+    grid-gap: 20px; //defines space btw columns and btw rows of columns. (gutter)
+}
+
+.col-12 {
+    grid-column: span 4;
+    border: 1px solid purple;
+}
+.col-11 {
+    grid-column: span 4;
+    border: 1px solid purple;
+}
+.col- {
+    grid-column: span 4;
+    border: 1px solid purple;
+}
+.col-4 {
+    grid-column: span 4;
+    border: 1px solid purple;
+}
+.col-6 {
+    grid-column: span 6;
+    border: 1px solid red;
+}
+.col-4 {
+    grid-column: span 4;
+    border: 1px solid purple;
+}
+.col-4 {
+    grid-column: span 4;
+    border: 1px solid purple;
+}
+.col-4 {
+    grid-column: span 4;
+    border: 1px solid purple;
+}
