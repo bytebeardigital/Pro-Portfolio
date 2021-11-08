@@ -1,9 +1,13 @@
 import React from "react";
-import Buttons from "../components/Buttons";
-
+import theme from "../theme";
+import Button from "../components/Button";
 
 function DesignSystem() {
-    return <Buttons/>
+    return <div className="container">
+        <div className="row">
+            <Button buttonType="outline"/>
+        </div>
+    </div>
 }
 
 export default DesignSystem;
